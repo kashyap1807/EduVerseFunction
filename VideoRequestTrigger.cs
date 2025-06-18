@@ -1,4 +1,5 @@
-﻿using EduVerseFunction.Email;
+﻿using EduVerseFunction.Dtos;
+using EduVerseFunction.Email;
 using EduVerseFunction.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -58,7 +59,7 @@ namespace EduVerseFunction
         HttpRequest req, ExecutionContext context)
         {
             _logger.LogInformation("C# HTTP trigger function processed SendVideoRequestAckEmailToUser request.");
-            VideoRequest model = new VideoRequest();
+            VideoRequestModel model = new VideoRequestModel();
 
             try
             {
@@ -71,7 +72,7 @@ namespace EduVerseFunction
                 }
 
                 //we will parse our request body to this model
-                model = JsonSerializer.Deserialize<VideoRequest>(requestBody);
+                model = JsonSerializer.Deserialize<VideoRequestModel>(requestBody);
 
                 if (model == null || model.VideoRequestId < 1)
                 {
