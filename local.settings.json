@@ -1,0 +1,19 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+        "DbContext": "Data Source=KASHYAP\\SQLEXPRESS; Initial Catalog=EduVerse; Integrated Security=True; Trust Server Certificate=True;",
+        "BASIC_AUTH_USERNAME": "admin",
+        "BASIC_AUTH_PASSWORD": "kashyap",
+        "UpdateProfileURL": "http://localhost:7013/api/UpdateUserProfile",
+        "From": "kashyapchudasama4@gmail.com",
+        "SENDGRID_API_KEY": "",
+        "Sql_Trigger_MaxBatchSize": 300,
+        "Sql_Trigger_PollingIntervalMs": 1000,
+        "Sql_Trigger_MaxChangesPerWorker": 100
+    },
+    "ConnectionStrings": {
+        "DbContext": "Data Source=KASHYAP\\SQLEXPRESS; Initial Catalog=EduVerse; Integrated Security=True; Trust Server Certificate=True;"
+    }
+}
